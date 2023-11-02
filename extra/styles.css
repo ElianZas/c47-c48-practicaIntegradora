@@ -1,0 +1,85 @@
+:root {
+    --background-color-nav: #4AA7A1;
+}
+body{
+    background-color: #02000B;
+    color:white;
+    text-align: center;
+}
+.descripcion-banner{
+    margin:32px;
+    font-size: 18px;
+}
+
+.imagen-banner{
+    width: 100%;
+    height:450px;/*Para usar object-fit en img, tienen que colocarle a la imagen un valor en el ancho y alto*/
+    object-fit: cover;
+}
+
+.bg-body-tertiary{
+    background-color: var(--background-color-nav)!important;
+}
+
+.galeria-cards{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cardCO{
+    padding:2rem;
+    margin:32px;
+    max-height:600px;
+    min-height:300px;
+    background-color: #D9D9D9;
+    color:black;
+}
+/*Clases agregadas y eliminadas con js*/
+.claro{
+    background-color: #D9D9D9;
+    color:black;
+}
+.oscuro{
+    background:#101010;
+    color:white;
+}
+
+button{
+    margin:16px;
+    background-color: rgb(92, 13, 92);
+    color:white;
+    padding: 8px 24px 8px 24px;
+    border-radius: 20px;
+    
+}
+
+.lbl-switch{
+    display:inline-block;
+    width:55px;
+    height:30px;
+    background-color: #aaaaaa;
+    border-radius: 100px;
+    position:relative;
+    cursor:pointer;
+}
+#btn-switch:checked~ .lbl-switch{
+    background-color: #4AA7A1;
+}
+.lbl-switch:after{
+    position:absolute;
+    content:'';
+    width:22px;
+    height:22px;
+    background-color: white;
+    border-radius: 100px;
+    top:4px;
+    left:5px;
+    transition:0.3s;
+}
+#btn-switch:checked~ .lbl-switch:after{
+    left:28px;
+}
+#btn-switch{
+    display:none;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C47 C48 Integración</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">C47 C48</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Más proyectos</a>
+              <a class="nav-link" href="#">Sobre Nosotr@s</a>
+              <a class="nav-link" href="#">Contactanos</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <section class="contenedor-banner">
+        <figure class="contenedor-imgba">
+            <img class="img-banner" src="./media/pexels-beyza-kaplan-8134609.jpg" alt="Imagen verde con numeros">
+        </figure>
+        <p class="descripcion-banner">En esta página encontrarás pequeños proyectos en los cuales integramos HTML CSS Y JS. Se creó con el objetivo de promover el aprendizaje practico y la aplicación de los conocimientos adquiridos en el curso</p>
+    </section>
+    <section class="contenedor-cards">
+        <article  class="tarjetas">
+            <h2>Claro-Oscuro</h2>
+            <button class="btn-tarjetas">Haz click</button>
+        </article>
+        <article class="tarjetas" id="tarjeta-color">
+            <h2>Cambiar color</h2>
+            <button class="btn-tarjetas" id="btnCambiar" onclick = "cambiarColor()">Haz click</button>
+        </article>
+        <article class="tarjetas">
+            <h2>Adivinar Número</h2>
+            <input type="text"  id="inputNumero">
+            <button class="btn-tarjetas">Haz click</button>
+        </article>
+        <article class="tarjetas">
+            <h2>Pop UP</h2>
+            <button class="btn-tarjetas">Haz click</button>
+        </article>
+    </section>
+
+    <script src="./scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
